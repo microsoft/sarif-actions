@@ -10,12 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Hello world action step
+      - name: Sarif action step
         uses: ./ # Uses an action in the root directory
-        id: hello
         with:
           arguments: 'help'
-          
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
