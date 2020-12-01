@@ -1,0 +1,12 @@
+name: 'sarif'
+description: 'Execute sarif multitool'
+inputs:
+  command:
+    description: 'Command to be sent to sarif multitool'
+    required: false
+    default: 'version'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
