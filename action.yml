@@ -1,8 +1,8 @@
-name: 'sarif'
-description: 'Execute sarif multitool'
+name: 'SARIF Multitool'
+description: 'Execute SARIF Multitool'
 inputs:
   command:
-    description: 'Command to be sent to sarif multitool'
+    description: 'Command to be sent to SARIF Multitool'
     required: false
     default: 'version'
 runs:
