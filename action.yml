@@ -1,13 +1,10 @@
 name: 'sarif'
 description: 'Execute sarif multitool'
 inputs:
-  command:  # id of input
-    description: 'command to be sent to sarif multitool'
+  command:
+    description: 'Command to be sent to sarif multitool'
     required: false
     default: 'version'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
 runs:
   using: 'docker'
   image: 'Dockerfile'
