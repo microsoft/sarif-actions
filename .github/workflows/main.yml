@@ -13,4 +13,4 @@ jobs:
       - name: Sarif action step
         uses: ./ # Uses an action in the root directory
         with:
-          command: 'help'
+          command: 'validate ./new.sarif'
